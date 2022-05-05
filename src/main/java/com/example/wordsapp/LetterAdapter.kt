@@ -69,10 +69,10 @@ class LetterAdapter :
             val context = holder.view.context
 
             //creación de un intent y pasamo el contexto, así como el nombre de la actividad destino
-            val intent = Intent(context, DetailActivity::class.java)
+            val intent = Intent(context, WordListFragment::class.java)
 
             //Llama al método putExtra. Pasa "letter" como primer argumento y el texto del botón como el segundo.
-            intent.putExtra(DetailActivity.LETTER, holder.button.text.toString())
+            intent.putExtra(WordListFragment.LETTER, holder.button.text.toString())
 
             //Llama al método startActivity() en el objeto de contexto y pasa el intent.
             context.startActivity(intent)
